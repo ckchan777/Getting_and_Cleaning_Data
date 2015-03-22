@@ -34,6 +34,7 @@ names(Y) <- "activity"
 
 names(S) <- "subject"
 cleaned <- cbind(S, Y, X)
+write.table(cleaned, "merged_clean_data.txt")
 
 # 5. From step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
